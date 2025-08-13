@@ -18,19 +18,20 @@ export default function Home() {
       setError("Phone number must be 10 digits and start with 98 or 97");
       return;
     }
-
+    window.location.href =
+      "https://www.figma.com/proto/FMDmv8z4WlxJxPAK2tvQHt/modified-resturant-app?page-id=0%3A1&node-id=47-495&starting-point-node-id=47%3A495&t=9QLsWvggIa9aVPmW-1";
     setError("");
-    router.push(`/users/${id}`); // Redirect to the dynamic user page
+    // router.push(`/users/${id}`);
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setId(e.target.value);
-    setError(""); // Clear error while typing
+    setError("");
   };
 
   return (
     <div className="flex justify-center items-center h-screen">
-      <div className="w-full max-w-md p-6 border rounded-lg shadow-lg">
+      <div className="w-full max-w-md p-6 ">
         <h1 className="text-3xl text-center mb-6">Register Here</h1>
         <input
           type="text"
